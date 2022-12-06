@@ -69,7 +69,7 @@ function App() {
       <div className="mainBottom">
 
       {error && <p>{ error.message }</p>}
-      {isLoading && <p>Data is Loading...</p>}
+      {isLoading && <p>Data is Loading...........</p>}
       {countries && <Countries countries={filterDesh} onRemove={handleRemoveCountry} /> }
 
       </div>
