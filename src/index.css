@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  margin: 0; padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: #1d3557;
+}
+
+.mainBody{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bodyHead{
+  width: 100%;
+  height: 15rem;
+  background-color: #457b9d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+.bodyHead h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.headSearch{
+  font-size: 3rem;
+}
+.headSearch input{
+  width: 30rem;
+  height: 3rem;
+  font-size: 2rem;
+  outline: none;
+  padding: .2rem .8rem;
+  font-weight: 800;
+  border-radius: .6rem;
+  border: .2rem solid #1d3557;
+}
+.mainBottom{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 1rem;
+  color: white;
+  gap: 1rem;
+
+}
+
+.compo{
+  margin: 1rem;
+  height: 40rem;
+  width: 30rem;
+  background-color: #e63946;
+  padding: .8rem;
+  box-shadow: 14px 15px 32px -6px rgba(0, 0, 0, 0.38);
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.compo img{
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  border: .5rem #1d3557 solid ;
+  width: 29rem;
+  height: 15rem;
+}
+
+.compo h4{
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+.compo p{
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #001430;
+  font-weight: bold;
+}
+.compo button{
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  background: transparent;
+  border: none;
+  color: rgb(49, 0, 0);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.compo button:hover{
+  transition: all .2s linear;
+  transform: scale(1.3);
+  color: #001d46;
+}
+
+.compo:hover{
+  transition: all .15s linear;
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+/*------Responsive-------*/
+@media screen and (max-width: 992px) {
+  .mainBottom {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainBottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainBottom {
+    /* width: 100%; */
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+}
+
+@media screen and (max-width: 700) {
+  html{
+    font-size: 40%;
+  }
+  .mainBottom {
+    /* width: 100%; */
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
